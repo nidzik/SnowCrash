@@ -1,0 +1,39 @@
+$ find / -user flag00 2>/dev/null
+/usr/sbin/john
+/rofs/usr/sbin/john
+
+$ cat /usr/sbin/john
+cdiiddwpgswtgt
+
+ROT:
+ROT-0: cdiiddwpgswtgt
+ROT-1: dejjeexqhtxuhu
+ROT-2: efkkffyriuyviv
+ROT-3: fgllggzsjvzwjw
+ROT-4: ghmmhhatkwaxkx
+ROT-5: hinniibulxbyly
+ROT-6: ijoojjcvmyczmz
+ROT-7: jkppkkdwnzdana
+ROT-8: klqqllexoaebob
+ROT-9: lmrrmmfypbfcpc
+ROT-10: mnssnngzqcgdqd
+ROT-11: nottoohardhere
+ROT-12: opuuppibseifsf
+ROT-13: pqvvqqjctfjgtg
+ROT-14: qrwwrrkdugkhuh
+ROT-15: rsxxsslevhlivi
+ROT-16: styyttmfwimjwj
+ROT-17: tuzzuungxjnkxk
+ROT-18: uvaavvohykolyl
+ROT-19: vwbbwwpizlpmzm
+ROT-20: wxccxxqjamqnan
+ROT-21: xyddyyrkbnrobo
+ROT-22: yzeezzslcospcp
+ROT-23: zaffaatmdptqdq
+ROT-24: abggbbunequrer
+ROT-25: bchhccvofrvsfs
+
+ROT11 ->
+$ su flag00
+
+$ getflag

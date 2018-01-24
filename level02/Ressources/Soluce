@@ -1,0 +1,34 @@
+dump file .pcap
+$ tcpdump -qns 0 -X -r level02.pcap
+...
+07:23:26.095219 IP 59.233.235.223.12121 > 59.233.235.218.39247: tcp 13
+	0x0000:  4500 0041 d4b3 4000 4006 1677 3be9 ebdf  E..A..@.@..w;...
+	0x0010:  3be9 ebda 2f59 994f baa8 fb18 9d18 157b  ;.../Y.O.......{
+	0x0020:  8018 01c5 279d 0000 0101 080a 02c2 3c62  ....'.........<b
+	0x0030:  011b b987 000d 0a50 6173 7377 6f72 643a  .......Password:
+	0x0040:  20
+...
+
+or
+
+$  tshark -r level02.pcap -V
+
+Data (13 bytes)
+
+0000  00 0d 0a 50 61 73 73 77 6f 72 64 3a 20            ...Password:
+    Data: 000d0a50617373776f72643a20
+    [Length: 13]
+
+read data field after passwd :
+
+66 74 5f 77 61 6e 64 72 7f 7f 7f 4e 44 52 65 6c 7f 4c 30 4c
+
+7f means DEL
+
+ft_wandrNDRelL0L
+==> ft_wandrDELDELDELNDRelDELL0L
+== ft_waNDReL0L
+
+$ su flag02
+
+$ getflag

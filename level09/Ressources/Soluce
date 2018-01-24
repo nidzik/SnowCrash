@@ -1,0 +1,15 @@
+$ ./level09 aaa
+abc
+
+seems like he return av[1][n] + n
+
+token must be encode like that
+
+$ ./magic ~/token
+f3iji1ju5[...]
+
+here we go
+$ su flag09
+
+$ get flag
+..

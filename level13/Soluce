@@ -1,0 +1,15 @@
+simple binaire :
+strings : check of uid  needed 4242
+
+gdb level13
+
++14 cmp $0x1092 %eax
++21 call getuid
+
+break a +14
+replace the %eax
+
+set $eax=4242
+c
+r
+your token is 2A31L[...]
