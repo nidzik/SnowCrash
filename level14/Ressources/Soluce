@@ -1,0 +1,28 @@
+exploit the getflag binary 
+
+gdb$ diassemble main
+
+   0x08048989 <+67>:	call   0x8048540 <ptrace@plt>
+   0x0804898e <+72>:	test   %eax,%eax
+   0x08048990 <+74>:	jns    0x80489a8 <main+98>
+
+break at +72 
+$ print $eax 
+-1
+$set $eax=1
+
+the prog continue instead of exit (because of gdb)
+
+   0x08048b06 <+448>:	mov    0x18(%esp),%eax
+   0x08048b0a <+452>:	cmp    $0xbbe,%eax
+   0x08048b0f <+457>:	je     0x8048ccb <main+901>
+
+break a +452 
+
+$ print $eax
+2014
+$ set $eax=3014
+$ c
+Continuing.
+Check flag.Here is your token : 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+ 
